@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "5b7f",
+      "name": "Megha",
+      "email": "M@gmail.com",
+      "dept": "CSE",
+      "course": "Python"
+    },
+    {
+      "id": "3d0d",
+      "name": "Raja",
+      "email": "R@gmail.com",
+      "dept": "ECE",
+      "course": "Java"
+    }
+  ]
+}
