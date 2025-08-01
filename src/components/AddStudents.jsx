@@ -16,7 +16,8 @@ const AddStudents = () => {
      const user = {
       name,email, dept, course
      }
-     axios.post("http://localhost:5000/users",user)
+     axios.post("/api/users", user)
+
      .then(()=>{
         setName("")
         setEmail("")

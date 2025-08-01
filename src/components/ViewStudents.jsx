@@ -9,7 +9,7 @@ const ViewStudents = () => {
   const navigate = useNavigate()
 
   function fetchData(){
-    axios.get("http://localhost:5000/users")
+    axios.get("/api/users")
     .then((response)=>setUsers(response.data))
     .catch(err=>console.log(err))
   }
@@ -22,7 +22,7 @@ const ViewStudents = () => {
     }
 
     function handleDelete(id){
-      axios.delete(`http://localhost:5000/users/${id}`)
+      axios.delete(`/api/users/${id}`)
       .then(()=>{
         fetchData()
       })

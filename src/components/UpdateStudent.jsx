@@ -13,7 +13,7 @@ const UpdateStudent = () => {
   const navigate = useNavigate()
 
   useEffect(()=>{
-    axios.get(`http://localhost:5000/users/${id}`)
+    axios.get(`/api/users/${id}`)
     .then((response)=>{
         const {name, email, dept, course} = response.data
         setName(name)
@@ -29,7 +29,7 @@ const UpdateStudent = () => {
         e.preventDefault()
         const updateStudent = {name, email, department, course}
 
-        axios.put(`http://localhost:5000/users/${id}`, updateStudent)
+        axios.put(`/api/users/${id}`, updateStudent)
         .then(()=>{
           navigate("/viewStudent/users")
         })
